@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import portfolioPhotoUrl from './portfolioPhoto.jpeg';
-import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css";
 import Fade from 'react-reveal';
 
