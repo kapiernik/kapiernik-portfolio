@@ -1,5 +1,6 @@
 import React from 'react';
 import photo from './photo.jpeg';
+import Title from '../title';
 import { Fade } from 'react-reveal';
 import styled from 'styled-components';
 
@@ -7,21 +8,13 @@ import './aboutMe.css';
 
 const AboutMeBlock = styled.div`
     height: 100vh;
-    background-color: #dfdfdf;
+    background-color: #fafafa;
     display: grid;
     grid-template-columns: minmax(min-content, 50%) 1fr;
     grid-template-rows: minmax(min-content, min-content) 1fr;
     grid-template-areas: 'title photo' 
                          'description photo';
     align-items: center;
-`;
-
-const Title = styled.h2`
-    grid-area: title;
-    text-align: left;
-    margin-left: 50px;
-    margin-top: 50px;
-    font-size: 4rem;
 `;
 
 const Photo = styled.img`
@@ -37,7 +30,8 @@ const Description = styled.p`
     text-align: left;
     margin-left: 50px;
     align-self: start;
-    font-weight: 450;
+    font-weight: 400;
+    margin-top: -70px;
 `;
 
 const AboutMe = () => {
