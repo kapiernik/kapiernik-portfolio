@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import portfolioPhoto from './portfolioPhoto.jpeg';
+import portfolioPhotoUrl from './portfolioPhoto.jpeg';
 import "bootstrap/dist/css/bootstrap.min.css";
-import "shards-ui/dist/css/shards.min.css"
+import "shards-ui/dist/css/shards.min.css";
+import Fade from 'react-reveal';
 
 const HeaderBlock = styled.header`
     display: flex;
@@ -31,13 +32,19 @@ const Header = () => {
 
     return ( 
         <HeaderBlock>
-            <HeaderTitle>
-                Mykola Bezkrovnyi
-            </HeaderTitle>
-            <PortfolioPhoto src={portfolioPhoto} />
-            <HeaderSubtitle>
-                Junior Frontend Developer
-            </HeaderSubtitle>
+            <Fade top duration={5000} forever opposite>
+                <HeaderTitle>
+                    Mykola Bezkrovnyi
+                </HeaderTitle>
+            </Fade>
+            <Fade top duration={5000} forever opposite>
+                <PortfolioPhoto src={portfolioPhotoUrl} />
+            </Fade>
+            <Fade top duration={5000} forever opposite>
+                <HeaderSubtitle>
+                    Junior Frontend Developer
+                </HeaderSubtitle>
+            </Fade>
         </HeaderBlock>
      );
 }
