@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 import './aboutMe.css';
 
-const AboutMeBlock = styled.div`
+const Container = styled.div`
     height: 100vh;
     background-color: #fafafa;
     display: grid;
@@ -36,7 +36,7 @@ const Description = styled.p`
 
 const AboutMe = () => {
     return ( 
-        <AboutMeBlock>
+        <Container>
             <Fade top distance="50px">
                 <Title>
                     About me
@@ -52,7 +52,7 @@ const AboutMe = () => {
                     like to make sites and learn more and more knowledges.
                 </Description>
             </Fade>
-        </AboutMeBlock>
+        </Container>
      );
 }
  

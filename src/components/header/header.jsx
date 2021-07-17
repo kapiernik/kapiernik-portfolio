@@ -4,7 +4,7 @@ import portfolioPhotoUrl from './portfolioPhoto.jpeg';
 import "shards-ui/dist/css/shards.min.css";
 import Fade from 'react-reveal';
 
-const HeaderBlock = styled.header`
+const Container = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +30,7 @@ const PortfolioPhoto = styled.img`
 const Header = () => {
 
     return ( 
-        <HeaderBlock>
+        <Container>
             <Fade top duration={5000} forever opposite>
                 <HeaderTitle>
                     Mykola Bezkrovnyi
@@ -44,7 +44,7 @@ const Header = () => {
                     Junior Frontend Developer
                 </HeaderSubtitle>
             </Fade>
-        </HeaderBlock>
+        </Container>
      );
 }
  
