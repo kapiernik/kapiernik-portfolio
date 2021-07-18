@@ -1,0 +1,37 @@
+[
+    {
+        "name": "easyCalc",
+        "imageUrl": "https://res.cloudinary.com/kapiernikcdn/image/upload/v1626636194/easyCalc_mdbedl.png",
+        "url": "https://github.com/kapiernik/easyCalc"
+    },
+    {
+        "name": "Crowdfund page",
+        "imageUrl": "https://res.cloudinary.com/kapiernikcdn/image/upload/v1626636194/crowdfund_flgxnd.png",
+        "url": "https://github.com/kapiernik/crowdfunding-frontend-mentor2"
+    },
+    {
+        "name": "kap-tabs",
+        "imageUrl": "https://res.cloudinary.com/kapiernikcdn/image/upload/v1626637743/kap-tabs_vtbyb2.png",
+        "url": "https://www.npmjs.com/package/kap-tabs"
+    },
+    {
+        "name": "Aviasales Test Task",
+        "imageUrl": "https://res.cloudinary.com/kapiernikcdn/image/upload/v1626638968/aviasales_xsmix0.png",
+        "url": ""
+    },
+    {
+        "name": "HTML Academy Competition",
+        "imageUrl": "https://res.cloudinary.com/kapiernikcdn/image/upload/v1626639413/gameON_co1esr.png",
+        "url": "https://github.com/kapiernik/olimpiada-html-academy"
+    },
+    {
+        "name": "4 card challenge",
+        "imageUrl": "https://res.cloudinary.com/kapiernikcdn/image/upload/v1626640508/4card_njoowr.png",
+        "url": "https://github.com/kapiernik/fourcard-frontend-mentor"
+    },
+    {
+        "name": "Javascript Documentation",
+        "imageUrl": "https://res.cloudinary.com/kapiernikcdn/image/upload/v1626641532/documentaion_i1gagx.png",
+        "url": "https://github.com/kapiernik/Technical-Documentation-Page"
+    }
+]
