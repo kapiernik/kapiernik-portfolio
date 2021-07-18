@@ -4,6 +4,7 @@ import { Fade } from 'react-reveal';
 import Title from '../title';
 import Card from './card';
 import projects from './projects.json';
+import { v4 as uuidv4 } from 'uuid';
 
 const Container = styled.section`
     min-height: 100vh;
@@ -25,7 +26,7 @@ const Projects = () => {
 
     const cards = projects.map(project => {
         return (
-            <Card name={project.name} imageUrl={project.imageUrl} url={project.url} />
+            <Card key={uuidv4()} name={project.name} imageUrl={project.imageUrl} url={project.url} />
         )
     })
 
