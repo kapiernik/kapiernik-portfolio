@@ -2,13 +2,14 @@ import React from 'react';
 import Title from '../title';
 import styled from 'styled-components';
 import { Fade } from 'react-reveal';
+import { v4 as uuidv4 } from 'uuid';
 import htmlIcon from './icons/html.png';
 import cssIcon from './icons/css.png';
+import javascriptIcon from './icons/javascript.png';
 import reactIcon from './icons/react.png';
 import svelteIcon from './icons/svelte.png';
 import typescriptIcon from './icons/typescript.png';
 import phpIcon from './icons/php.png';
-import webpackIcon from './icons/webpack.png';
 
 const Container = styled.div`
     height: 100vh;
@@ -28,7 +29,6 @@ const SkillsBlock = styled.div`
 
 const SoftSkills = styled.div`
     width: 50%;
-    border-right: 10px solid #0000006c;
 `;
 
 const Subtitle = styled.h3`
@@ -62,6 +62,12 @@ const HardSkillsList = styled.ul`
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 20px;
+    align-items: center;
+    li{
+        font-size: 24px;
+        color: #000;
+        text-align: center;
+    }
 `;
 
 const Icon = styled.img`
@@ -70,7 +76,7 @@ const Icon = styled.img`
 
 const Skills = () => {
 
-    const iconsUrl = [htmlIcon, cssIcon, reactIcon, svelteIcon, typescriptIcon, phpIcon, webpackIcon];
+    const iconsUrl = [htmlIcon, cssIcon, javascriptIcon, reactIcon, svelteIcon, typescriptIcon, phpIcon];
 
     return ( 
         <Container>
@@ -115,11 +121,14 @@ const Skills = () => {
                         <HardSkillsList>
                             {iconsUrl.map((iconUrl) => {
                                 return (
-                                    <li>
+                                    <li key={uuidv4()}>
                                     <Icon src={iconUrl}></Icon>
                                     </li>
                                 )
                             })}
+                            <li key={uuidv4()}>
+                                Et cetera...
+                            </li>
                         </HardSkillsList>
                     </Fade>
                 </HardSkills>
