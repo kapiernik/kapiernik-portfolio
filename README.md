@@ -6,5 +6,5 @@ Welcome to Mykola Bezkrovnyi's portfolio, Trainee/Junior FrontEnd developer
 
 - React
 - Styled Components
-- SCSS for cases, where styled components cannot be used(for scrollbar, for example)
+- SCSS for cases, where styled components cannot be used(for scrollbar or some problems with dependencies, for example)
 - React Reveal
