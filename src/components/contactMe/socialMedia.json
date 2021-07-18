@@ -1,0 +1,17 @@
+[
+    {
+        "name": "github",
+        "imageUrl": "https://res.cloudinary.com/kapiernikcdn/image/upload/v1626646322/iconmonstr-instagram-11-240_nd2tzh.png",
+        "url": "https://github.com/kapiernik"
+    },
+    {
+        "name": "instagram",
+        "imageUrl": "https://res.cloudinary.com/kapiernikcdn/image/upload/v1626646322/iconmonstr-github-1-240_wkywp3.png",
+        "url": "https://instagram.com/kapiernik"
+    },
+    {
+        "name": "telegram",
+        "imageUrl": "https://res.cloudinary.com/kapiernikcdn/image/upload/v1626646322/iconmonstr-telegram-4-240_oidi4l.png",
+        "url": "t.me/kapiernik"
+    }
+]
