@@ -11,7 +11,7 @@ import svelteIcon from './icons/svelte.png';
 import typescriptIcon from './icons/typescript.png';
 import phpIcon from './icons/php.png';
 
-const Container = styled.div`
+const Container = styled.section`
     height: 100vh;
     background-color: #ebebeb;
     display: flex;

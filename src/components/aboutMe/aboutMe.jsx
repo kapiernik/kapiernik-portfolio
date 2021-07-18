@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 import './aboutMe.css';
 
-const Container = styled.div`
+const Container = styled.section`
     height: 100vh;
     background-color: #fafafa;
     display: grid;

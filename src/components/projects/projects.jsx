@@ -5,7 +5,7 @@ import Title from '../title';
 import Card from './card';
 import projects from './projects.json';
 
-const Container = styled.div`
+const Container = styled.section`
     min-height: 100vh;
     background-color: #9C9C9C;
     display: flex;

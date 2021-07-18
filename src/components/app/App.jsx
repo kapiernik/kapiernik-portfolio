@@ -13,9 +13,11 @@ const App = () => {
   return (
     <AppContainer>
       <Header />
-      <AboutMe />
-      <Skills />
-      <Projects />
+      <main>
+        <AboutMe />
+        <Skills />
+        <Projects />
+      </main>
     </AppContainer>
   );
 }
