@@ -87,6 +87,8 @@ const Skills = () => {
                         <Subtitle>
                             Soft Skills
                         </Subtitle>
+                    </Fade>
+                    <Fade top cascade>
                         <SoftSkillsList>
                             <li>
                                 Creativity
@@ -109,17 +111,17 @@ const Skills = () => {
                             Hard Skills
                         </Subtitle>
                     </Fade>
-                    <HardSkillsList>
-                        {iconsUrl.map((iconUrl) => {
-                            return (
-                                <Fade left>
+                    <Fade left cascade>
+                        <HardSkillsList>
+                            {iconsUrl.map((iconUrl) => {
+                                return (
                                     <li>
                                     <Icon src={iconUrl}></Icon>
                                     </li>
-                                </Fade>
-                            )
-                        })}
-                    </HardSkillsList>
+                                )
+                            })}
+                        </HardSkillsList>
+                    </Fade>
                 </HardSkills>
             </SkillsBlock>
         </Container>
