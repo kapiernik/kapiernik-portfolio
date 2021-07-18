@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Fade } from 'react-reveal';
 import Title from '../title';
 import Card from './card';
+import projects from './projects.json';
 
 const Container = styled.div`
     min-height: 100vh;
@@ -21,6 +22,13 @@ const ProjectsContainer = styled.div`
 `;
 
 const Projects = () => {
+
+    const cards = projects.map(project => {
+        return (
+            <Card name={project.name} imageUrl={project.imageUrl} url={project.url} />
+        )
+    })
+
     return ( 
         <Container>
             <Fade top>
@@ -30,10 +38,7 @@ const Projects = () => {
             </Fade>
             <Fade left>
                 <ProjectsContainer>
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    {cards}
                 </ProjectsContainer>
             </Fade>
         </Container>
