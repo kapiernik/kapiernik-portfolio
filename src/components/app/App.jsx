@@ -3,6 +3,7 @@ import Header from '../header';
 import AboutMe from '../aboutMe';
 import Skills from '../skills';
 import Projects from '../projects';
+import ContactMe from '../contactMe';
 import styled from 'styled-components';
 
 const AppContainer = styled.div`
@@ -18,6 +19,7 @@ const App = () => {
         <Skills />
         <Projects />
       </main>
+      <ContactMe />
     </AppContainer>
   );
 }
