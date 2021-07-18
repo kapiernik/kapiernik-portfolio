@@ -3,6 +3,7 @@ import photo from './photo.jpeg';
 import Title from '../title';
 import { Fade } from 'react-reveal';
 import styled from 'styled-components';
+import { media, size } from '../devices/devices';
 
 import './aboutMe.css';
 
@@ -22,6 +23,10 @@ const Photo = styled.img`
     border-radius: 5px;
     width: 500px;
     height: auto;
+
+    @media ${media.laptop}{
+        width: 350px;
+    }
 `;
 
 const Description = styled.p`
@@ -32,6 +37,10 @@ const Description = styled.p`
     align-self: start;
     font-weight: 400;
     margin-top: -70px;
+
+    @media ${media.laptop} {
+        font-size: 24px;
+    }
 `;
 
 const AboutMe = () => {
