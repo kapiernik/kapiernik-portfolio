@@ -3,18 +3,25 @@ import photo from './photo.jpeg';
 import Title from '../title';
 import { Fade } from 'react-reveal';
 import styled from 'styled-components';
-import { media, size } from '../devices/devices';
+import { size } from '../devices/devices';
 
 import './aboutMe.css';
 
 const Container = styled.section`
-    height: 100vh;
+    min-height: 100vh;
     background-color: #fafafa;
     display: grid;
     grid-template-columns: minmax(min-content, 50%) 1fr;
     grid-template-rows: minmax(min-content, min-content) 1fr;
     grid-template-areas: 'title photo' 
                          'description photo';
+
+    @media screen and (max-width: ${size.laptop}){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     align-items: center;
 `;
 
@@ -24,8 +31,9 @@ const Photo = styled.img`
     width: 500px;
     height: auto;
 
-    @media ${media.laptop}{
+    @media screen and (max-width: ${size.laptop}){
         width: 350px;
+        margin: 30px 0;
     }
 `;
 
@@ -36,10 +44,19 @@ const Description = styled.p`
     margin-left: 50px;
     align-self: start;
     font-weight: 400;
-    margin-top: -70px;
 
-    @media ${media.laptop} {
+    @media screen and (min-width: ${size.laptopL}){
+        margin-top: -70px;
+    }
+
+    @media screen and (max-width: ${size.laptop}) {
         font-size: 24px;
+        margin: 50px;
+        margin-top: 0;
+    }
+    
+    @media screen and (max-width: 1100px){
+        font-size: 30px;
     }
 `;
 

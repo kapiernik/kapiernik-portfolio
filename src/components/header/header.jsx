@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import portfolioPhotoUrl from './portfolioPhoto.jpeg';
 import "shards-ui/dist/css/shards.min.css";
 import Fade from 'react-reveal';
+import { size } from '../devices/devices';
 
 const Container = styled.header`
     display: flex;
@@ -10,10 +11,18 @@ const Container = styled.header`
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    @media screen and (max-width: ${size.tablet}){
+        justify-content: flex-start;
+    }
 `;
 
 const HeaderTitle = styled.h1`
     font-size: 64px;
+    line-height: 1.2;
+
+    @media screen and (max-width: ${size.tablet}){
+        margin-top: 30px;
+    }
 `;
 
 const HeaderSubtitle = styled.h2`
@@ -25,6 +34,9 @@ const PortfolioPhoto = styled.img`
     width: 300px;
     height: 300px;
     margin: 50px 0;
+    @media screen and (max-width: ${size.tablet}){
+        margin: 30px 0;
+    }
 `;
 
 const Header = () => {

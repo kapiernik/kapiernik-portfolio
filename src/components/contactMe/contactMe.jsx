@@ -4,6 +4,7 @@ import Title from '../title';
 import { Fade } from 'react-reveal';
 import socialMedia from './socialMedia.json';
 import { v4 as uuidv4 } from 'uuid';
+import { size } from '../devices/devices';
 
 const Container = styled.footer`
     min-height: 100vh;
@@ -25,6 +26,10 @@ const SocialMedia = styled.ul`
     justify-content: center;
     list-style-type: none;
     height: 70vh;
+
+    @media screen and (max-width: ${size.tablet}){
+        flex-direction: column;
+    }
 `;
 
 const Copyright = styled.p`
