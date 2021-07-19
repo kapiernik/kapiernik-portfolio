@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Scrollbar customization */
+
+::-webkit-scrollbar {
+  width: 15px;
+  background: rgba(200, 200, 200, 0.1);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: #f0f2f5;
+  -webkit-transition: all  3s;
+  transition: all  3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8b8b8;
+}
+/*# sourceMappingURL=index.css.map */
