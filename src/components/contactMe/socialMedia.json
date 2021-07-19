@@ -12,6 +12,11 @@
     {
         "name": "telegram",
         "imageUrl": "https://res.cloudinary.com/kapiernikcdn/image/upload/v1626646322/iconmonstr-telegram-4-240_oidi4l.png",
-        "url": "t.me/kapiernik"
+        "url": "https://t.me/kapiernik"
+    },
+    {
+        "name": "LinkedIn",
+        "imageUrl": "https://res.cloudinary.com/kapiernikcdn/image/upload/v1626699109/iconmonstr-linkedin-3-240_qsez7f.png",
+        "url": "https://www.linkedin.com/in/kapiernik/"
     }
 ]
